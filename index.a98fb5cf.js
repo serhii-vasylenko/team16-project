@@ -1,0 +1,2 @@
+var EMAIL_REGEXP=RegExp('^(([^<>()[\\].,;:\\s@"]+(\\.[^<>()[\\].,;:\\s@"]+)*)|(".+"))@(([^<>()[\\].,;:\\s@"]+\\.)+[^<>()[\\].,;:\\s@"]{2,})$',"iu"),input=document.querySelector("input");function isEmailValid(n){return EMAIL_REGEXP.test(n)}function onInput(){isEmailValid(input.value)?input.style.borderColor="green":input.style.borderColor="red"}input.addEventListener("input",onInput);
+//# sourceMappingURL=index.a98fb5cf.js.map
