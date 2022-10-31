@@ -1,0 +1,94 @@
+<main>
+  <section class="subscribe" id="subscribe-section">
+    <div class="container subscribe-container">
+      <picture>
+        <source
+          srcset="
+            ./images/background2-desktop-1280-200-1x.png 1x,
+            ./images/background2-desktop-1280-200-2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/background2-tablet-768-100-1x.png 1x,
+            ./images/background2-tablet-768-100-2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/background2-mob-480-1x.png 1x,
+            ./images/background2-mob-480-2x.png 2x
+          "
+          media="(min-width:479px)"
+        />
+        <source
+          srcset="
+            ./images/background2-mob-320-1x.png 1x,
+            ./images/background2-mob-320-2x.png 2x
+          "
+          media="(max-width:479px)"
+        />
+        <img
+          src="./images/background2-desktop-1280-200-1x.png"
+          alt="Фон"
+          class="subscribe__image-background"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="./images/banan-des-1x.png 1x, ./images/banan-des-2x.png 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="./images/banan-tab-1x.png 1x, ./images/banan-tab-2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/banan-mob-1x.png 1x, ./images/banan-mob-2x.png 2x"
+          media="(max-width:767px)"
+        />
+        <img src="./images/banan-des-1x.png" alt="Банан" class="subscribe__image-banan" />
+      </picture>
+      <form class="subscribe-form">
+        <h2 class="subscribe-form__title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe-form__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+
+        <label class="subscribe-form__label">
+          <input
+            type="email"
+            name="email"
+            class="subscribe-form__input"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+
+        <button type="submit" class="subscribe-form__btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</main>
+<script>
+  const EMAIL_REGEXP =
+    /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+  const input = document.querySelector('input');
+
+  function isEmailValid(value) {
+    return EMAIL_REGEXP.test(value);
+  }
+
+  function onInput() {
+    if (isEmailValid(input.value)) {
+      input.style.borderColor = 'green';
+    } else {
+      input.style.borderColor = 'red';
+    }
+  }
+
+  input.addEventListener('input', onInput);
+</script>
