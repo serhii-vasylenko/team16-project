@@ -20,10 +20,20 @@ img {
   height: auto;
 }
 
+<<<<<<< HEAD
 a {
   text-decoration: none;
 }
 
 ul {
+=======
+%link {
+  text-decoration: none;
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+>>>>>>> c0eecdc7be551e7eec6fb42fc1edf68e09c0a75e
   list-style: none;
 }
