@@ -53,29 +53,48 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .sub-image {
-    margin: 0 auto;
-    margin-bottom: 17px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .sub-image {
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: 20px;
-  }
-}
-
 @media screen and (min-width: 1280px) {
-  .sub-container {
+  .subscribe-container {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
 }
 
-.bac-image {
+.subscribe {
+  padding-bottom: 60px;
+  padding-top: 20px;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .subscribe {
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding-top: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .subscribe {
+    padding-top: 134px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe__image-banan {
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .subscribe__image-banan {
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+.subscribe__image-background {
   display: block;
   position: absolute;
   z-index: -1;
@@ -85,63 +104,38 @@ ul {
   transform: translate(-50%);
 }
 @media screen and (max-width: 479px) {
-  .bac-image {
+  .subscribe__image-background {
     width: 100%;
   }
 }
 
-.subscribe-section {
-  padding-bottom: 60px;
-  padding-top: 20px;
-  position: relative;
-}
-@media screen and (min-width: 480px) {
-  .subscribe-section {
-    padding-top: 5px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .subscribe-section {
-    padding-top: 25px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .subscribe-section {
-    padding-top: 134px;
-  }
-}
-
-.sub-form {
+.subscribe-form {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: baseline;
 }
 @media screen and (min-width: 768px) {
-  .sub-form {
+  .subscribe-form {
     display: block;
   }
 }
 @media screen and (min-width: 1280px) {
-  .sub-form {
+  .subscribe-form {
     display: block;
     width: 700px;
   }
 }
-
-.sub-form__title {
+.subscribe-form__title {
   font-size: 28px;
   line-height: 120%;
   color: #2C2C2C;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .sub-form__title {
+  .subscribe-form__title {
     font-size: 42px;
   }
 }
-
-.sub-form__text {
+.subscribe-form__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -149,19 +143,18 @@ ul {
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  .sub-form__text {
+  .subscribe-form__text {
     font-size: 16px;
     margin-bottom: 24px;
   }
 }
-
-.sub-form__input {
+.subscribe-form__input {
   padding-left: 12px;
   background: #FFFFFF;
   border: 0.854167px solid #FFE550;
   border-radius: 30px;
   height: 42px;
-  width: 279px;
+  width: 100%;
   font-weight: 400;
   font-size: 12px;
   line-height: 0.66;
@@ -170,23 +163,22 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
-  .sub-form__input {
+  .subscribe-form__input {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .sub-form__input {
+  .subscribe-form__input {
     margin-right: 22px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .sub-form__input {
-    margin-right: 32px;
     width: 395px;
   }
 }
-
-.sub-form__btn {
+@media screen and (min-width: 1280px) {
+  .subscribe-form__input {
+    margin-right: 32px;
+  }
+}
+.subscribe-form__btn {
   display: inline-block;
   padding: 11px 22px;
   border: none;
@@ -200,11 +192,11 @@ ul {
   background: #BBF330;
   border-radius: 30px;
 }
-.sub-form__btn:hover, .sub-form__btn:focus, .sub-form__btn:active {
+.subscribe-form__btn:hover, .subscribe-form__btn:focus, .subscribe-form__btn:active {
   background: #B5FF00;
 }
 @media screen and (max-width: 767px) {
-  .sub-form__btn {
-    margin-left: 178px;
+  .subscribe-form__btn {
+    margin-left: auto;
   }
 }/*# sourceMappingURL=index.css.map */
