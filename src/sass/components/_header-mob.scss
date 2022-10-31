@@ -95,7 +95,7 @@
 }
 
 .menu__list {
-  // @extend %list;
+  @extend %list;
 
 }
 
@@ -117,7 +117,7 @@
 }
 
 .menu__item {
-  // @extend %link;
+  @extend %link;
 
 
   font-family: inherit;
