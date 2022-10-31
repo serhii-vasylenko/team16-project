@@ -56,12 +56,14 @@ ul {
 @media screen and (max-width: 767px) {
   .sub-image {
     margin: 0 auto;
+    margin-bottom: 17px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .sub-image {
     margin-right: 0;
     margin-left: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -149,6 +151,7 @@ ul {
 @media screen and (min-width: 768px) {
   .sub-form__text {
     font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 
