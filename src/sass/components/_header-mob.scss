@@ -98,11 +98,11 @@
   fill: $main-text-color;
 }
 
-.menu-mobile__list {
+.menu__list {
   @extend %list;
 }
 
-.menu-mobile_link {
+.menu_link {
   display: block;
   // height: 19px;
   padding: 16px;
@@ -119,7 +119,7 @@
   }
 }
 
-.menu-mobile__item {
+.menu__item {
   @extend %link;
 
   font-family: inherit;
