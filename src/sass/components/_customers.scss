@@ -3,18 +3,18 @@
   background-size: cover;
   background-position: center;
   @media (max-width: 479px) {
-    background-image: url(./images/castomers/mobile/fon-mob1.png);
+    background-image: url(../images/castomers/mobile/fon-mob1.png);
     padding: 60px 0;
   }
   @media (min-width: 480px) and (max-width: 767px) {
-    background-image: url(./images/castomers/mobile/fon-mob480.png);
+    background-image: url(../images/castomers/mobile/fon-mob480.png);
   }
   @media (min-width: 768px) and (max-width: 1279px) {
-    background-image: url(./images/castomers/tablet/fon-tab1.png);
+    background-image: url(../images/castomers/tablet/fon-tab1.png);
     padding: 60px 0 120px;
   }
   @media (min-width: 1280px) {
-    background-image: url(./images/castomers/pc/fon-pc.png);
+    background-image: url(../images/castomers/pc/fon-pc.png);
     padding: 100px 0 200px;
   }
 }
