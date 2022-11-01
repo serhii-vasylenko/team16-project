@@ -1,0 +1,36 @@
+ .menu_link {
+    @media screen and  (min-width:$tablet) {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: auto;
+    }
+}
+
+.menu_link {
+    @media screen and  (min-width:$tablet) {
+    &:not(:last-child) { margin-right: 15px;}}
+
+    @media screen and  (min-width:$desktop) {
+    &:not(:last-child) { margin-right: 25px;}
+    }
+}
+
+.menu__item__color {
+    @media screen and  (min-width:$tablet) {
+      color: $accent-color;
+      text-decoration: revert;
+    }
+}
+
+.menu-container {
+    @media screen and  (min-width:$tablet) { margin-left: auto;
+    margin-right: 30px;}}
+
+
+.button__order {
+    background-color: $accent-color;
+    color: $nav-text-color;
+    border-radius: 30px;
+    border: none;
+    padding: 6px 18px;
+}
