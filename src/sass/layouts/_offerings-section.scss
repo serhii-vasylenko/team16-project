@@ -1,4 +1,6 @@
 .offerings-container {
+    margin-right: auto;
+    margin-left: auto;
     max-width: 480px;
     padding: 0px 20px 60px 20px;
     background-color: #FFE550;
@@ -81,6 +83,7 @@
     display: block;
     width: 48px;
     height: 48px;
+    margin-bottom: 8px;
 }
 
 .features__item-delivery::before {
@@ -93,6 +96,7 @@
 
 .features__item-delivery,
 .features__item-order {
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -100,7 +104,34 @@
     color: #2C2C2C;
 }
 .actions {
-    @media screen and (min-width: 768px) {
         display: flex;
-    }
+        gap: 24px;
+}
+.actions__button{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    
+    color: #2C2C2C;
+}
+.actions__link{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.6667px;
+    line-height: 1.5;
+
+    color: #000000;
+}
+.actions__link::after{
+    content: "";
+    display: block;
+    margin-left: 3px;
+    width: 14px;
+    height: 14px;
+    background-image: url(/src/images/сhevron.svg);
 }
