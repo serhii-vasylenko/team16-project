@@ -47,11 +47,11 @@
     }
 }
 
-.description {
+.offerings__description {
     margin-bottom: 28px;
 }
 
-.offerings__description {
+.offerings__paragraph {
 
     font-weight: 400;
     font-size: 14px;
@@ -79,31 +79,31 @@
     margin-bottom: 28px;
 }
 
-.delivery::before,
-.order::before {
+.features__item-delivery::before,
+.features__item-order::before {
     content: "";
     display: block;
     width: 48px;
     height: 48px;
 }
 
-.delivery::before {
+.features__item-delivery::before {
     background-image: url(/src/images/icon-deliv.svg);
 }
 
-.order::before {
+.features__item-order::before {
     background-image: url(/src/images/icon-order.svg);
 }
 
-.delivery,
-.order {
+.features__item-delivery,
+.features__item-order {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 
     color: #2C2C2C;
 }
-.buttons {
+.actions {
     @media screen and (min-width: 768px) {
         display: flex;
     }
