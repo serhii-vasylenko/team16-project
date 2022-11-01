@@ -39,11 +39,34 @@
           choose from too, I would recommend to a freind, No questions asked”
         </p>
         <div class="customer-box">
-          <img
-            class="icon"
-            src="./images/castomers/mobile/castomer1.jpg"
-            alt="man"
-          />
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="
+                ./images/castomers/mobile/castomer1.jpg,
+                ./images/castomers/mobile/castomer1@2x.jpg
+              "
+            />
+            <source
+              media="(min-width:768px) and (max-width:1279px)"
+              srcset="
+                ./images/castomers/mobile/castomer1.jpg,
+                ./images/castomers/mobile/castomer1@2x.jpg
+              "
+            />
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/castomers/mobile/castomer1.jpg,
+                ./images/castomers/mobile/castomer1@2x.jpg
+              "
+            />
+            <img
+              class="icon"
+              src="./images/castomers/mobile/castomer1.jpg"
+              alt="man"
+            />
+          </picture>
           <div class="thumb">
             <h3 class="pre-title">Sumith Shah</h3>
             <p class="description">Some Dude</p>
@@ -54,7 +77,7 @@
         <ul class="stars__list">
           <li class="stars__item">
             <svg class="icon-star" width="17" height="16">
-              <use href="./images/castomers/symbol-defs.svg#icon-star1"></use>
+              <use class="man" href="./images/castomers/symbol-defs.svg#icon-star1"></use>
             </svg>
           </li>
           <li class="stars__item">
@@ -84,11 +107,34 @@
           app”
         </p>
         <div class="customer-box">
-          <img
-            class="icon"
-            src="./images/castomers/mobile/castomer2.jpg"
-            alt="woman"
-          />
+              <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="
+                ./images/castomers/mobile/castomer2.jpg,
+                ./images/castomers/mobile/castomer2@2x.jpg
+              "
+            />
+            <source
+              media="(min-width:768px) and (max-width:1279px)"
+              srcset="
+                ./images/castomers/mobile/castomer2.jpg,
+                ./images/castomers/mobile/castomer2@2x.jpg
+              "
+            />
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/castomers/mobile/castomer2.jpg,
+                ./images/castomers/mobile/castomer2@2x.jpg
+              "
+            />
+            <img
+              class="icon"
+              src="./images/castomers/mobile/castomer1.jpg"
+              alt="woman"
+            />
+          </picture>
           <div class="thumb">
             <h3 class="pre-title">Sumith Shah</h3>
             <p class="description">Some Dude</p>

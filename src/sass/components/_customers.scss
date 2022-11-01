@@ -1,3 +1,6 @@
+ul {
+  list-style: none;
+}
 .customers {
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,6 +77,14 @@
       margin-right: 139px;
     }
   }
+}
+.icon-star {
+  fill: $second-hover-color;
+}
+.icon-star:hover,
+.icon-star:focus {
+  fill: tomato;
+  cursor: pointer;
 }
 .stars__list {
   display: flex;
