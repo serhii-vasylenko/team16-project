@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css"/>  
+  </head>
+<body>
+    <section class="offerings-container">
+        <picture>
+             <source
+                  srcset="
+                    ./images/apples/apple-mob280x309_1x.png 1x,
+                    ./images/apples/apple-mob280x309_2x.png 2x"
+                  type="image/png"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/apples/apple-tab704x394_1x.png 1x,
+                    ./images/apples/apple-tab704x394_2x.png 2x"
+                  type="image/png"
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/apples/apple-desk550x604_1x.png 1x,
+                    ./images/apples/apple-desk550x604_2x.png 2x"
+                  type="image/png"
+                  media="(min-width: 1280px)"
+                />
+        <img class="offerings-pic" src="./images/apples/apple-mob280x309_1x.png" alt="Green apple"></img>
+        </picture>
+        <div class="offerings">
+            <div class="offerings__description">
+                <h2 class="offerings__header">What’s Special About Our Offerings</h2>
+                <p class="offerings__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            </div>
+            <ul class="features">
+              <li class="features__item">
+                <!-- <svg><use href="#"></use></svg> -->
+                <h3 class="features__item-delivery">Fasest Delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+              <li class="features__item">
+                <!-- <svg><use href="#"></use></svg> -->
+                <h3 class="features__item-order">Easy to order</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              </li>
+            </ul>
+            <div class="actions">
+              <button type="button">Order Now</button>
+              <a href="#">Read More</a>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
