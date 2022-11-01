@@ -1,0 +1,187 @@
+// Modal-window back background
+.backdrop {
+  // position
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  overflow-y: scroll;
+
+  background: rgba(94, 99, 99, 0.7);
+
+  opacity: 1;
+  transition: opacity $animation;
+
+  // changing geometry by Breakpoint (480px)
+  @media screen and (max-width: $mobile) {
+   
+    padding-top: 60px;
+  }
+
+  // Modal-window hidden states
+
+  &.is-hidden {
+      // effects
+      pointer-events: none;
+      opacity: 0;
+    
+      transition: opacity $animation, visibility $animation;
+  }
+
+  animation settings of hiding modal-window
+    &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+  
+  //Helper classes for JavaScript code in 'modal.js' file: - 'is-hidden' for hidden modal-window & background; -'no-scroll' for stop scrolling page, when modal-window open.
+
+
+.modal {
+  min-width: 320px;
+  width: 100vw;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 30px;
+  padding: 32px 20px;
+
+  background-color: $second-border-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+  transition: transform $animation, scale $animation;
+
+  // changing location & geometry by breakpoint (480px)
+  @media screen and (min-width: 481px) {
+    // position
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+
+    // geometry
+    width: 458px;
+  }
+
+  // additional position settings required for scrolling the modal window when the viewport height is less than 610px
+  @media screen and (min-width: $mobile) and (min-height: 610px) {
+    // position
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  // changing geometry by breakpoint (768px)
+  @media screen and (min-width: $tablet) {
+    padding: 32px;
+  }
+
+  &__close-btn {
+    // position
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    // geometry
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+    // decor
+    background: #ffffff;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    // effects and animation
+    cursor: pointer;
+    transition: color $animation;
+  }
+
+  &__title {
+    // geometry
+    margin-bottom: 20px;
+
+    // text
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+    &__form-label {
+      margin-bottom: 2px;
+      margin-left: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    &__form-input {
+      width: 100%;
+      padding: 14px 12px;
+      font-size: 16px;
+      line-height: 1.25;
+      margin: 0;
+      outline: 0;
+      color: $main-text-color;
+      border: 1px solid $main-border-color;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 30px;
+     
+      transition: border $animation;
+
+      &::placeholder {
+        color: #c4c4c4;
+        font-size: 16px;
+        line-height: 1.25;
+      }
+    }
+
+    &__form-btn {
+      // geometry
+      display: inline-block;
+      margin: 0 auto;
+      min-width: 106px;
+      padding: 10px 38px;
+
+      border: 2px solid $main-border-color;
+      border-radius: 30px;
+
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.5;
+
+      cursor: pointer;
+      transition: background-color $animation;
+
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+        }
+      
+     }
+  }
+
