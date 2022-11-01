@@ -1,6 +1,6 @@
 <footer class="footer" id="footer">
   <div class="container footer__wrapper">
-    <div class="footer__basic">
+    <div class="footer-link__wraper">
       <a class="footer__logo-link" href="./index.html">
         <img
           src="./images/logo.svg"
@@ -8,31 +8,63 @@
           width="69px"
         />
       </a>
-      <ul class="footer__menu-list">
-        <li class="footer__menu-item">Header</li>
-        <li class="footer__menu-item">Hero</li>
-        <li class="footer__menu-item">Offerings</li>
-        <li class="footer__menu-item">Favorites</li>
-        <li class="footer__menu-item">Customers Say</li>
-        <li class="footer__menu-item">Subscribe</li>
-      </ul>
-      <label class="footer__subscribe" action="">
-        <input class="footer__input" type="text" />
-      </label>
-      <button class="footer__button">Subscribe</button>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#favorite">Favorite food</a> 
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#offerings">Our offerings</a> 
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#favorites">Favorites </a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#customers">Customers Say</a> 
+          </li> 
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#subscribe">Subscribe</a> 
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#footer">About us</a> 
+          </li>
+        </ul>
+      </nav>
+    </div>
+      
+      <div class="footer-form__container">
+        <form class="footer-form">
+          <p class="footer-form__text">
+            Subscribe
+          </p>
+          <div class="footer-form__wrap">
+            <label for="mail"></label>
+              <input name="mail" id="mail" type="email" placeholder="Enter your email"/>
+              <button type="submit" class="footer-form__btn">Subscribe</button> 
+          </div>
+        </form>
+      </div>
       <p class="footer__agree">
         By subscribing you agree to with our
         <a class="footer__privacy-policy" href=""> Privacy Policy</a>
       </p>
-    </div>
 
-    <div class="footer__info">
-      <ul class="footer__info-list">
-        <li class="footer__info-item">Privacy Policy</li>
-        <li class="footer__info-item">Terms of Service</li>
-        <li class="footer__info-item">Cookies Settings</li>
+    <div class="footer-info">
+      <ul class="footer-info__list">
+        <li class="footer-info__item"> <a class="footer-info__link" href="#">
+          Privacy Policy
+        </a> 
+        </li>
+        <li class="footer-info__item"> <a class="footer-info__link" href="#">
+          Terms of Service
+        </a> 
+        </li>
+        <li class="footer-info__item"> <a class="footer-info__link" href="#">
+          Cookies Settings
+        </a> 
+        </li>
       </ul>
-      <p class="footer__copyright">2022 FoodSta. All right reserved.</p>
     </div>
+    <p class="footer__copyright">2022 FoodSta. All right reserved.</p>
   </div>
 </footer>
