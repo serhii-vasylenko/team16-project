@@ -2,22 +2,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media (max-width: 479px) {
+  padding: 60px 0;
+  @media (max-width: 479.98px) {
     background-image: url(../images/castomers/mobile/fon-mob1.png);
-    padding: 60px 0;
+    margin-bottom: -41px;
   }
   @media (min-width: 480px) and (max-width: 767px) {
     background-image: url(../images/castomers/mobile/fon-mob480.png);
   }
   @media (min-width: 768px) and (max-width: 1279px) {
     background-image: url(../images/castomers/tablet/fon-tab1.png);
-    padding: 60px 0 120px;
+    padding-bottom: 120px;
+    margin-bottom: -74px;
   }
   @media (min-width: 1280px) {
     background-image: url(../images/castomers/pc/fon-pc.png);
     padding: 100px 0 200px;
+    margin-bottom: -59px;
   }
 }
+
 .customers__title {
   margin-bottom: 20px;
   color: $main-text-color;
@@ -58,10 +62,11 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
-
   @media (min-width: 320px) and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
     padding: 8px;
-    margin-bottom: 24px;
   }
   @media (min-width: 768px) and (max-width: 1279.98px) {
     padding: 12px;
@@ -75,6 +80,7 @@
     }
   }
 }
+
 .stars__list {
   display: flex;
   margin-bottom: 28px;
