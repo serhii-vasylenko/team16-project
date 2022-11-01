@@ -12,20 +12,19 @@ ul {
   }
   @media (min-width: 480px) and (max-width: 767.98px) {
     background-image: url(../images/castomers/mobile/fon-mob480.png);
-    width: 480px;
-    margin: 0 auto;
+    background-size: 480px;
   }
   @media (min-width: 768px) and (max-width: 1279.98px) {
     background-image: url(../images/castomers/tablet/fon-tab1.png);
+    background-size: 768px;
     padding-bottom: 120px;
-    width: 768px;
-    margin: 0 auto -74px;
+    margin-bottom: -74px;
   }
   @media (min-width: 1280px) {
     background-image: url(../images/castomers/pc/fon-pc.png);
+    background-size: 1280px;
     padding: 100px 0 200px;
-    width: 1280px;
-    margin: 0 auto -65px;
+    margin-bottom: -65px;
   }
 }
 .customers__title {
