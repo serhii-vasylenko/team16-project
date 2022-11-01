@@ -35,6 +35,11 @@
 
 .button__menu-svg {
   fill: $second-text-color;
+  transition: fill $animation;
+
+  .button__menu:hover & {
+    fill: $second-hover-color;
+  }
 }
 
 .button__order {
@@ -100,20 +105,10 @@
 
 .menu__list {
   @extend %list;
-
 }
 
 .menu__item {
   display: block;
-  // height: 19px;
-  padding: 16px;
-
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    cursor: pointer;
-  }
 
   @media screen and (min-width: $tablet) {
     display: inline-block;
@@ -122,12 +117,22 @@
 
 .menu__link {
   @extend %link;
+  display: block;
+  padding: 14px;
 
 
   font-family: inherit;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.19;
 
+  background-color: $main-bg-color;
+  transition: background-color $animation;
   color: $nav-text-color;
+
+  .menu__item:hover &,
+  .menu__item:focus & {
+    background-color: $accent-color;
+    cursor: pointer;
+  }
 }
