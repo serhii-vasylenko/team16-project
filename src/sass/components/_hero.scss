@@ -1,0 +1,249 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 110px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 134px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 159px;
+    padding-bottom: 193px;
+  }
+
+  &__background {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      bottom: -110px;
+    }
+
+    @media screen and (min-width: $mobile) {
+      width: 480px;
+      bottom: -110px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 768px;
+      bottom: -134px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 1280px;
+      bottom: -193px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media screen and (min-width: $tablet) {
+      width: 537px;
+      margin-bottom: 44px;
+
+      font-size: 42px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 502px;
+      margin-bottom: 28px;
+
+      font-size: 48px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 28px;
+
+    line-height: 1.5;
+
+    @media screen and (min-width: $tablet) {
+      width: 336px;
+      margin-bottom: 40px;
+
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 502px;
+
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.button__order.button__order--hero {
+  display: block;
+}
+
+.dishes {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $mobile-end) {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet-end) {
+    top: 89px;
+    right: 32px;
+
+    width: 336px;
+    height: 320px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    bottom: -150px;
+    right: 16px;
+
+    width: 608px;
+    height: 580px;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+
+    @media screen and (min-width: $tablet) {
+      width: 320px;
+      height: 320px;
+
+      border-radius: 50%;
+      border: 14px solid $second-border-color;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 580px;
+      height: 580px;
+
+      border-radius: 50%;
+      border: 26px solid $second-border-color;
+    }
+  }
+
+  &__slyder {
+    position: relative;
+    display: flex;
+    left: 0;
+
+    transition: all 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: $tablet-end) {
+      width: 960px;
+      height: 320px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 1740px;
+      height: 580px;
+    }
+  }
+  &__img:not(:last-child) {
+    @media screen and (max-width: $tablet-end) {
+      margin-right: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 26px;
+    }
+  }
+}
+
+.dishes__button {
+  position: absolute;
+
+  border-radius: 8px;
+  border: none;
+
+  background-color: $slyder-button-bg;
+
+  transition: transform $animation, box-shadow $animation;
+
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .dishes__arrow,
+  &:focus .dishes__arrow {
+    transform: scale(1.1);
+    fill: $main-border-color;
+  }
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
+
+  &--prev {
+    @media screen and (min-width: $tablet) {
+      top: 50%;
+      left: 0px;
+      transform: translate(0, -50%);
+
+      width: 34px;
+      height: 28px;
+
+      padding: 3px 13px 3px 9px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 50%;
+      left: 0px;
+      transform: translate(0, -50%);
+
+      width: 48px;
+      height: 40px;
+
+      padding: 5px 18px 5px 13px;
+    }
+  }
+
+  &--next {
+    @media screen and (min-width: $tablet) {
+      top: 50%;
+      right: 0px;
+      transform: translate(0, -50%);
+
+      width: 34px;
+      height: 28px;
+
+      padding: 3px 9px 3px 13px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      top: 50%;
+      right: 0px;
+      transform: translate(0, -50%);
+
+      width: 48px;
+      height: 40px;
+
+      padding: 5px 13px 5px 18px;
+    }
+  }
+}
+
+.dishes__arrow {
+  fill: $main-text-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 11px;
+    height: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 29px;
+  }
+}
