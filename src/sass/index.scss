@@ -5,11 +5,12 @@
 
 @import './components/container';
 @import './components/header-mob';
-@import './components/hero';
 @import './components/favorites-list';
 @import './components/footer';
 // @import './components/modal';
 
+@import './layouts/hero-section';
 @import './layouts/customers-section';
 @import './layouts/favorites-section';
 @import './layouts/subscribe-section';
+@import'./layouts/offerings-section';
