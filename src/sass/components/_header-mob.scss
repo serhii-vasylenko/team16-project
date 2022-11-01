@@ -99,7 +99,7 @@
 
 }
 
-.menu_link {
+.menu__item {
   display: block;
   // height: 19px;
   padding: 16px;
@@ -116,7 +116,7 @@
   }
 }
 
-.menu__item {
+.menu_link {
   @extend %link;
 
 
