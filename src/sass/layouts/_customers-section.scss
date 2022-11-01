@@ -1,0 +1,121 @@
+.customers {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 479px) {
+    background-image: url(../images/castomers/mobile/fon-mob1.png);
+    padding: 60px 0;
+  }
+  @media (min-width: 480px) and (max-width: 767px) {
+    background-image: url(../images/castomers/mobile/fon-mob480.png);
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(../images/castomers/tablet/fon-tab1.png);
+    padding: 60px 0 120px;
+  }
+  @media (min-width: 1280px) {
+    background-image: url(../images/castomers/pc/fon-pc.png);
+    padding: 100px 0 200px;
+  }
+}
+.customers__title {
+  margin-bottom: 20px;
+  color: $main-text-color;
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+.customers__text {
+  margin-bottom: 32px;
+  color: $main-text-color;
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+.customers__list {
+  @media (min-width: 768px) and (max-width: 1279.98px) {
+    display: flex;
+    gap: 32px;
+  }
+  @media (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.customers__item {
+  background-color: $main-bg-color;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    padding: 8px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279.98px) {
+    padding: 12px;
+    width: 336px;
+  }
+  @media (min-width: 1280px) {
+    padding: 14px;
+    width: 501px;
+    &:not(:last-child) {
+      margin-right: 139px;
+    }
+  }
+}
+.stars__list {
+  display: flex;
+  margin-bottom: 28px;
+}
+.stars__item {
+  margin-right: 4px;
+}
+.pre-text {
+  font-weight: 700;
+  color: $main-text-color;
+  margin-bottom: 40px;
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+}
+.customer-box {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  border-right: 1px solid $main-border-color;
+}
+.icon {
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.pre-title {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-text-color;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-text-color;
+}
