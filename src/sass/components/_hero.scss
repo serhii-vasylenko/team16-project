@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+
+  padding-top: 60px;
+  padding-bottom: 110px;
+  
+  &__background {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $mobile) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: 768px;
+    }
+
+    @media screen and (min-width:$desktop) {
+      width: 1280px;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__description {
+    margin-bottom: 28px;
+
+    line-height: 1.5;
+  }
+}
+
+.button__order.button__order--hero {
+  display:block;
+}
+
+.dishes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $mobile-end) {
+    display: none;
+  }
+}
