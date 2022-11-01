@@ -1,5 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 10;
   background-color: $main-bg-color;
   box-shadow: 0px 4px 24px $shadow-header;
 }
@@ -96,9 +100,10 @@
 
 .menu__list {
   @extend %list;
+
 }
 
-.menu_link {
+.menu__item {
   display: block;
   // height: 19px;
   padding: 16px;
@@ -115,8 +120,9 @@
   }
 }
 
-.menu__item {
+.menu_link {
   @extend %link;
+
 
   font-family: inherit;
   font-weight: 400;

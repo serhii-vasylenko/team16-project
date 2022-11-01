@@ -1,0 +1,100 @@
+.subscribe-container{
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+.subscribe{
+  padding-bottom: 60px;
+  &__image-banan{
+    @media screen and (max-width: $mobile-end) {
+      margin: 0 auto;
+      margin-bottom: 17px;
+    }
+    @media screen and (min-width: $tablet)and (max-width: $tablet-end) {
+      margin-right: 0;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+    }
+}
+.subscribe-form{
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: 700px;
+  }
+  &__title{
+    font-size: 28px;
+    line-height: 120%;
+    color: $main-text-color;
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+    font-size: 42px;
+    }
+  }
+  &__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $main-text-color;
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+  &__input{
+    padding-left: 12px;
+    background: #FFFFFF;
+    border: 0.854167px solid $second-border-color;
+    border-radius: 30px;
+    height: 42px;
+    width: 100%;
+      
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.66;
+    color: #505050;
+    outline: none;
+    transition: border $animation;
+    @media screen and (max-width: $mobile-end) {
+      margin-bottom: 20px;
+      }
+    @media screen and (min-width: $tablet) {
+      margin-right: 22px;
+      width: 395px;
+      }
+    @media screen and (min-width: $desktop) {
+      margin-right: 32px;
+      }
+    }
+  &__btn{
+    display: inline-block;
+    padding: 11px 22px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height:  150%;
+    height: 42px;
+    color: $main-text-color;
+    cursor: pointer;
+    transition: background-color $animation;
+      
+    background: $accent-color;
+    border-radius: 30px;
+      &:hover,
+      &:focus,
+      &:active{
+      background: $hover-color;
+      }
+    @media screen and (max-width: $mobile-end) {
+      margin-left: auto;
+      }
+  }
+}
