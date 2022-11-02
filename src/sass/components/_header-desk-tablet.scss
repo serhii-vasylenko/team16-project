@@ -1,0 +1,33 @@
+.menu-container {
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+}
+
+.menu__link {
+    @media screen and (min-width: $tablet) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+
+.menu__item {
+    @media screen and (min-width: $tablet) {
+      &:not(:last-child) {margin-right: 10px;}  
+    }
+
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {margin-right: 20px;}  
+    }
+}
+
+.button__order {
+    background-color: $accent-color;
+    padding: 6px 18px;
+    border: none;
+    color: $nav-text-color;
+    border-radius: 30px;
+}
