@@ -17,6 +17,7 @@
           id="name"
           placeholder="Your name"
           autofocus
+          required
           minlength="3"
           maxlength="25"
         />
@@ -30,6 +31,11 @@
           name="tel"
           id="tel"
           placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          pattern="^\+\d{2}\(\d{3}\)\d{3} \d{2} \d{2}$" 
+          minlength="17"
+          maxlength="17"
+
         />
       </div>
       <div class="modal__form-field">
@@ -40,7 +46,9 @@
         name="email" 
         id="email" 
         class="modal__form-input" 
+        required
         placeholder="example@gmail.com"/>
+        
       </div>
       <button type="submit" class="modal__form-btn">Send</button>
     </form>
