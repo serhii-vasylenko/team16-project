@@ -126,9 +126,13 @@
   transition: background-color $animation;
   color: $nav-text-color;
 
+
+  @media screen and (max-width: $mobile-end) {
   .menu__item:hover &,
   .menu__item:focus & {
     background-color: $accent-color;
     cursor: pointer;
   }
+  }
+  
 }
