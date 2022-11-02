@@ -1,3 +1,6 @@
+ul {
+  list-style: none;
+}
 .customers {
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,21 +10,23 @@
     background-image: url(../images/castomers/mobile/fon-mob1.png);
     margin-bottom: -41px;
   }
-  @media (min-width: 480px) and (max-width: 767px) {
+  @media (min-width: 480px) and (max-width: 767.98px) {
     background-image: url(../images/castomers/mobile/fon-mob480.png);
+    background-size: 480px;
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) and (max-width: 1279.98px) {
     background-image: url(../images/castomers/tablet/fon-tab1.png);
+    background-size: 768px;
     padding-bottom: 120px;
     margin-bottom: -74px;
   }
   @media (min-width: 1280px) {
     background-image: url(../images/castomers/pc/fon-pc.png);
+    background-size: 1280px;
     padding: 100px 0 200px;
-    margin-bottom: -59px;
+    margin-bottom: -65px;
   }
 }
-
 .customers__title {
   margin-bottom: 20px;
   color: $main-text-color;
@@ -62,6 +67,7 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+
   @media (min-width: 320px) and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -80,7 +86,10 @@
     }
   }
 }
-
+.icon-star:hover,
+.icon-star:focus {
+  cursor: pointer;
+}
 .stars__list {
   display: flex;
   margin-bottom: 28px;
