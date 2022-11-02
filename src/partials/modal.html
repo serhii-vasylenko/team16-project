@@ -1,26 +1,52 @@
 <!-- Modal -->
-<div class="modal">
-    <button class="modal__close-btn link" data-modal-close>
-        <svg width="11px" height="11px">
-          <use href="./images/icons.svg#icon-cloe-black-cross"></use>
-        </svg>
-      </button>
-  <p>Order Form</p>
-  <form class="form">
-    <label class="form__label">
-      Name
-      <input type="text" name="name" class="form__input" autofocus required placeholder="Your name" />
-    </label>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close-btn" data-modal-close>
+      <svg width="12px" height="12px">
+        <use href="./images/icons.svg#btn-cross"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Order Form</p>
+    <form class="modal__form">
+      <div class="modal__form-field">
+        <label class="modal__form-label" for="name">Name</label>
+        <input
+          type="text"
+          class="modal__form-input"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          autofocus
+          minlength="3"
+          maxlength="25"
+        />
+      </div>
+      <div class="modal__form-field">
+        <label for="tel" class="modal__form-label">Phone number</label>
 
-    <label class="form__label">
-       Phone number
-        <input type="tel" name="tel" class="form__input" required placeholder="+38(0_ _) _ _ _   _ _   _ _" />
-      </label>
+        <input
+          type="tel"
+          class="modal__form-input"
+          name="tel"
+          id="tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        />
+      </div>
+      <div class="modal__form-field">
+        <label for="email" class="modal__form-label">E-mail</label>
 
-      <label class="form__label">
-        E-mail
-        <input type="email" name="email" class="form__input" required placeholder="example@gmail.com" />
-      </label>
-      <button type="submit">Send</button>
-  </form>
+        <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        class="modal__form-input" 
+        placeholder="example@gmail.com"/>
+      </div>
+      <button type="submit" class="modal__form-btn">Send</button>
+    </form>
+    <script src="./js/modal.js"></script>
+  </div>
 </div>
+
+<!-- Connecting to the page an external file with JS code for the modal window -->
+<!-- <script src="./js/modal.js"></script> -->
