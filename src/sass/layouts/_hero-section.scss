@@ -135,7 +135,7 @@
     }
   }
 
-  &__slyder {
+  &__slider {
     position: relative;
     display: flex;
     left: 0;
@@ -169,18 +169,28 @@
   border-radius: 8px;
   border: none;
 
-  background-color: $slyder-button-bg;
+  cursor: pointer;
 
-  transition: transform $animation, box-shadow $animation;
+  background-color: $slider-button-bg;
+
+  transition: transform $animation, box-shadow $animation, fill $animation;
 
   &:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
   }
 
+  &:active .dishes__arrow {
+    @media screen and (max-width: $tablet-end) {
+      fill: $main-border-color;
+    }
+  }
+
   &:hover .dishes__arrow,
   &:focus .dishes__arrow {
-    transform: scale(1.1);
-    fill: $main-border-color;
+    @media screen and (min-width: $desktop) {
+      transform: scale(1.1);
+      fill: $main-border-color;
+    }
   }
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06));
