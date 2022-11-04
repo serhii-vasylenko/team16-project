@@ -1,0 +1,46 @@
+.actions__button {
+  font-size: 13px;
+  line-height: 150%;
+  color: #2c2c2c;
+  font-weight: 500;
+  min-width: 106px;
+  height: 40px;
+  padding: 9px 20px;
+  background: #ffffff;
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: border $animation;
+
+  &:hover,
+  &:active {
+    border: 2px solid #597d00;
+  }
+}
+
+.button__order {
+    transition: background-color $animation;
+
+  &:hover,
+  &:active {
+    background-color: #b5ff00;
+  }
+}
+.footer-form__btn {
+    transition: background-color  $animation;
+
+  &:hover,
+  &:active {
+    background-color: #FFE550;
+  }
+}
+
+.menu__link {
+    transition: color $animation;
+
+  &:hover,
+  &:active {
+    color: #BBF330;
+    text-decoration: underline;
+  }
+}
