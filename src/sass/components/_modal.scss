@@ -141,19 +141,28 @@
     &__form-input {
       width: 100%;
       padding: 14px 12px;
+      margin: 0;
+
       font-size: 16px;
       line-height: 1.25;
-      margin: 0;
       color: $main-text-color;
+
       border: 1px solid $main-border-color;
       box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
       border-radius: 30px;
      
       transition: border $animation;
 
-        &:focus {
+        @media screen and (min-width: $tablet) {
+          border: 1px solid rgba(18, 18, 18, 0.12);
+        }
+
+        &:focus,
+        &:hover {
         outline: none;
         border: 1px solid $main-border-color;
+
+        
        
     }
    
