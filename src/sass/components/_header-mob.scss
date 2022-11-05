@@ -132,6 +132,8 @@
   .menu__item:focus & {
     background-color: $accent-color;
     cursor: pointer;
+    color: $nav-text-color;
+    text-decoration: none;
   }
   }
   
