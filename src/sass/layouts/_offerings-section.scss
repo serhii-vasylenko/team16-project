@@ -3,7 +3,7 @@
     margin-left: auto;
     max-width: 480px;
     padding: 0px 20px 60px 20px;
-    background-color: #FFE550;
+    background-color: $second-hover-color;
     font-family: 'Roboto';
     font-style: normal;
 
@@ -37,7 +37,7 @@
     font-size: 28px;
     line-height: 1.18;
 
-    color: #2C2C2C;
+    color: $main-text-color;
 
     @media screen and (min-width: 768px) {
         font-size: 42px;
@@ -63,7 +63,7 @@
     font-size: 14px;
     line-height: 1.14;
 
-    color: #2C2C2C;
+    color: $main-text-color;
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
@@ -112,7 +112,7 @@
     font-size: 18px;
     line-height: 21px;
 
-    color: #2C2C2C;
+    color: $main-text-color;
 }
 .actions {
         display: flex;
@@ -125,7 +125,7 @@
     font-size: 13px;
     line-height: 1.5;
     
-    color: #2C2C2C;
+    color: $main-text-color;
 }
 .actions__link{
     display: flex;
@@ -136,7 +136,7 @@
     font-size: 13.6667px;
     line-height: 1.5;
 
-    color: #000000;
+    color: $nav-text-color;
 }
 .actions__link::after{
     content: "";

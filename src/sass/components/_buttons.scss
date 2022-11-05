@@ -1,20 +1,20 @@
 .actions__button {
   font-size: 13px;
   line-height: 150%;
-  color: #2c2c2c;
+  color: $main-text-color;
   font-weight: 500;
   min-width: 106px;
   height: 40px;
   padding: 9px 20px;
-  background: #ffffff;
-  border: 2px solid #7eb101;
+  background: $slider-button-bg;
+  border: 2px solid $second-text-color;
   border-radius: 30px;
   cursor: pointer;
   transition: border $animation;
 
   &:hover,
   &:active {
-    border: 2px solid #597d00;
+    border: 2px solid $hover-border-color;
   }
 }
 
@@ -26,7 +26,7 @@
 
   &:hover,
   &:active {
-    background-color: #b5ff00;
+    background-color: $hover-color;
   }
 }
 .footer-form__btn {
@@ -34,7 +34,7 @@
 
   &:hover,
   &:active {
-    background-color: #ffe550;
+    background-color: $second-hover-color;
   }
 }
 
@@ -43,7 +43,7 @@
 
   &:hover,
   &:active {
-    color: #bbf330;
+    color: $accent-color;
     text-decoration: underline;
   }
 }
