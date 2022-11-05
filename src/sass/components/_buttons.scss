@@ -19,7 +19,10 @@
 }
 
 .button__order {
-    transition: background-color $animation;
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: 500;
+  transition: background-color $animation;
 
   &:hover,
   &:active {
@@ -27,20 +30,20 @@
   }
 }
 .footer-form__btn {
-    transition: background-color  $animation;
+  transition: background-color $animation;
 
   &:hover,
   &:active {
-    background-color: #FFE550;
+    background-color: #ffe550;
   }
 }
 
 .menu__link {
-    transition: color $animation;
+  transition: color $animation;
 
   &:hover,
   &:active {
-    color: #BBF330;
+    color: #bbf330;
     text-decoration: underline;
   }
 }
