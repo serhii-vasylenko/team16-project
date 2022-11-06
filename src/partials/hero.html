@@ -3,14 +3,14 @@
     <picture>
       <source
         srcset="
-          ./images/hero/background-desktop.png 1x,
+          ./images/hero/background-desktop.png    1x,
           ./images/hero/background-desktop@2x.png 2x
         "
         media="(min-width: 1280px)"
       />
       <source
         srcset="
-          ./images/hero/background-tablet.png 1x,
+          ./images/hero/background-tablet.png    1x,
           ./images/hero/background-tablet@2x.png 2x
         "
         media="(min-width: 768px)"
@@ -18,7 +18,7 @@
 
       <source
         srcset="
-          ./images/hero/background-mob.png 1x,
+          ./images/hero/background-mob.png    1x,
           ./images/hero/background-mob@2x.png 2x
         "
         media="(min-width: 480px)"
@@ -26,7 +26,7 @@
 
       <source
         srcset="
-          ./images/hero/background-mob.png 1x,
+          ./images/hero/background-mob.png    1x,
           ./images/hero/background-mob@2x.png 2x
         "
         media="(max-width: 479px)"
@@ -38,13 +38,19 @@
         class="hero__background"
       />
     </picture>
-    <h1 class="hero__title animate__animated animate__swing">Enjoy Your Favorite Food From Anywhere</h1>
+    <h1 class="hero__title animate__animated animate__swing">
+      Enjoy Your Favorite Food From Anywhere
+    </h1>
     <p class="hero__description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
       ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
-    <button type="button" class="button__order button__order--hero  animate__animated animate__pulse animate__infinite" data-modal-open>
+    <button
+      type="button"
+      class="button__order button__order--hero animate__animated animate__pulse animate__infinite"
+      data-modal-open
+    >
       Order Now
     </button>
 
@@ -54,7 +60,7 @@
           <picture class="dishes__img">
             <source
               srcset="
-                ./images/hero/dish1-desktop.png 1x,
+                ./images/hero/dish1-desktop.png    1x,
                 ./images/hero/dish1-desktop@2x.png 2x
               "
               media="(min-width: 1280px)"
@@ -62,7 +68,7 @@
 
             <source
               srcset="
-                ./images/hero/dish1-tablet.png 1x,
+                ./images/hero/dish1-tablet.png    1x,
                 ./images/hero/dish1-tablet@2x.png 2x
               "
               media="(min-width: 768px)"
@@ -73,14 +79,14 @@
           <picture class="dishes__img">
             <source
               srcset="
-                ./images/hero/dish2-desktop.png 1x,
+                ./images/hero/dish2-desktop.png    1x,
                 ./images/hero/dish2-desktop@2x.png 2x
               "
               media="(min-width: 1280px)"
             />
             <source
               srcset="
-                ./images/hero/dish2-tablet.png 1x,
+                ./images/hero/dish2-tablet.png    1x,
                 ./images/hero/dish2-tablet@2x.png 2x
               "
               media="(min-width: 768px)"
@@ -91,7 +97,7 @@
           <picture class="dishes__img">
             <source
               srcset="
-                ./images/hero/dish3-desktop.png 1x,
+                ./images/hero/dish3-desktop.png    1x,
                 ./images/hero/dish3-desktop@2x.png 2x
               "
               media="(min-width: 1280px)"
@@ -99,7 +105,7 @@
 
             <source
               srcset="
-                ./images/hero/dish3-tablet.png 1x,
+                ./images/hero/dish3-tablet.png    1x,
                 ./images/hero/dish3-tablet@2x.png 2x
               "
               media="(min-width: 768px)"
@@ -108,12 +114,20 @@
             <img src="./images/hero/dish3-tablet.png" alt="Dish № 3" />
           </picture>
         </div>
-        <button type="button" class="dishes__button dishes__button--prev">
+        <button
+          type="button"
+          class="dishes__button dishes__button--prev"
+          id="btn-prev"
+        >
           <svg class="dishes__arrow">
             <use href="./images/icons.svg#icon-left-arrow"></use>
           </svg>
         </button>
-        <button type="button" class="dishes__button dishes__button--next">
+        <button
+          type="button"
+          class="dishes__button dishes__button--next"
+          id="btn-next"
+        >
           <svg class="dishes__arrow">
             <use href="./images/icons.svg#icon-right-arrow"></use>
           </svg>
