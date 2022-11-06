@@ -1,45 +1,73 @@
 <header class="header">
   <div class="header-page container">
     <a href="./index.html" lang="en">
-      <img class="logo" src="./images/logo.svg" alt="company logo" width="66" height="52">
+      <img
+        class="logo"
+        src="./images/logo.svg"
+        alt="company logo"
+        width="66"
+        height="52"
+      />
     </a>
-    
-    <button type="button" class="button__menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="button__menu-svg" aria-label="Open mobile menu" width="28" height="28">
-        <use class="button-menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
+
+    <button
+      type="button"
+      class="button__menu js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        class="button__menu-svg"
+        aria-label="Open mobile menu"
+        width="28"
+        height="28"
+      >
+        <use
+          class="button-menu__icon-menu"
+          href="./images/icons.svg#icon-menu"
+        ></use>
       </svg>
     </button>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="menu__cross js-close-menu">
-        <svg class="menu__cross-icon" width="24" height="24"><use href="./images/icons.svg#icon-cross"></use></svg>
+        <svg class="menu__cross-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
       </button>
 
       <nav>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#hero" class="menu__link">Favorite food</a>    
+            <a href="#hero" class="menu__link" id="hero_title">Favorite food</a>
           </li>
           <li class="menu__item">
-            <a href="#offerings" class="menu__link">Our offerings</a>    
+            <a href="#offerings" class="menu__link" id="offerings_title">Our offerings</a>
           </li>
           <li class="menu__item">
-            <a href="#favorites" class="menu__link">Favorites</a>    
+            <a href="#favorites" class="menu__link" id="favorites_title"
+              >Favorites</a
+            >
           </li>
           <li class="menu__item">
-            <a href="#customers" class="menu__link">Customers Say</a>    
+            <a href="#customers" class="menu__link" id="customers_title">Customers Say</a>
           </li>
           <li class="menu__item">
-            <a href="#subscribe" class="menu__link">Subscribe</a>    
+            <a href="#subscribe" class="menu__link" id="subscribe_title">Subscribe</a>
           </li>
           <li class="menu__item">
-            <a href="#footer" class="menu__link">About us</a>    
+            <a href="#footer" class="menu__link">About us</a>
           </li>
         </ul>
       </nav>
-      
     </div>
 
-    <button type="button" class="button__order  animate__animated animate__pulse animate__infinite animate__slow" data-modal-open>Order Now</button>
+    <button
+      type="button"
+      class="button__order animate__animated animate__pulse animate__infinite animate__slow"
+      data-modal-open
+    >
+      Order Now
+    </button>
   </div>
 </header>
