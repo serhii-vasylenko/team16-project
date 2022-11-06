@@ -18,7 +18,7 @@ autoSlider();
 
 // Auto slider
 function autoSlider() {
-  timer = setTimeout(sliderLeft, 3000);
+  timer = setTimeout(sliderLeft, 5000);
 }
 
 // Next-button click handler
@@ -50,7 +50,6 @@ function sliderRigth() {
 
 //  Return default dish if resize screen
 window.addEventListener('resize', function () {
-  
   setTimeout(function () {
     bordrWidth = Number(
       getComputedStyle(document.querySelector('.dishes__wrapper'), null)
