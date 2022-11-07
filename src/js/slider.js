@@ -11,15 +11,19 @@ let offset = 0;
 let stepSlider =
   document.querySelector('.dishes__img').clientWidth + bordrWidth;
 let positionSlider = (countImg - 1) * stepSlider;
-
-document.getElementById('btn-next').onclick = sliderLeft;
-document.getElementById('btn-prev').onclick = sliderRigth;
-autoSlider();
+let screenSize = document.documentElement.clientWidth;
 
 // Auto slider
+if (screenSize > 767) {
+  autoSlider();
+}
+
 function autoSlider() {
   timer = setTimeout(sliderLeft, 5000);
 }
+
+document.getElementById('btn-next').onclick = sliderLeft;
+document.getElementById('btn-prev').onclick = sliderRigth;
 
 // Next-button click handler
 
@@ -42,7 +46,8 @@ function sliderRigth() {
   if (offset < 0) {
     offset = positionSlider;
   }
-
+  clearTimeout(timer);
+  autoSlider();
   sliderLine.style.left = -offset + 'px';
   // Reset focus after click button
   document.querySelector('.dishes__button--prev').blur();
@@ -50,6 +55,11 @@ function sliderRigth() {
 
 //  Return default dish if resize screen
 window.addEventListener('resize', function () {
+  screenSize = document.documentElement.clientWidth;
+  clearTimeout(timer);
+  if (screenSize > 767) {
+    autoSlider();
+  }
   setTimeout(function () {
     bordrWidth = Number(
       getComputedStyle(document.querySelector('.dishes__wrapper'), null)
