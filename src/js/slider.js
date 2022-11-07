@@ -46,7 +46,8 @@ function sliderRigth() {
   if (offset < 0) {
     offset = positionSlider;
   }
-
+  clearTimeout(timer);
+  autoSlider();
   sliderLine.style.left = -offset + 'px';
   // Reset focus after click button
   document.querySelector('.dishes__button--prev').blur();
